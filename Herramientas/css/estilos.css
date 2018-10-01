@@ -216,3 +216,13 @@ svg > rect
 {
 	color: white !important;
 }
+
+.fishbone{
+	background-color: transparent;
+	border: 0px;
+	color: white;
+}
+
+.causa{
+	color: black !important;
+}

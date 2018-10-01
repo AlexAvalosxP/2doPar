@@ -13,24 +13,24 @@ function display(opt)
 			'</div>' +
 			'<div class="interactArea" id="interactArea">' +
 			'<img src="sources/fishbone.png" style="">' +
-			'<input type="text" id="causa1" placeholder="Causa 1" style="position: absolute; top:calc(105px + 10%) ; left: 30%">' +
-			'<input type="text" id="subacusa11" placeholder="Subcausa 1" style="position: absolute; top: 180px; left: 150px">' +
-			'<input type="text" id="subacusa12" placeholder="Subcausa 2" style="position: absolute; top: 230px; left: 165px">' +
-			'<input type="text" id="causa1" placeholder="Causa 2" style="position: absolute; top: 90px; left: 270px">' +
-			'<input type="text" id="subacusa21" placeholder="Subcausa 1" style="position: absolute; top: 180px; left: 365px">' +
-			'<input type="text" id="subacusa22" placeholder="Subcausa 2" style="position: absolute; top: 230px; left: 380px">' +
-			'<input type="text" id="causa1" placeholder="Causa 3" style="position: absolute; top: 90px; left: 490px">' +
-			'<input type="text" id="subacusa31" placeholder="Subcausa 1" style="position: absolute; top: 180px; left: 585px">' +
-			'<input type="text" id="subacusa32" placeholder="Subcausa 2" style="position: absolute; top: 230px; left: 600px">' +
-			'<input type="text" id="causa1" placeholder="Causa 4" style="position: absolute; top: 590px; left: 50px">' +
-			'<input type="text" id="subacusa41" placeholder="Subcausa 1" style="position: absolute; top: 470px; left: 150px">' +
-			'<input type="text" id="subacusa42" placeholder="Subcausa 2" style="position: absolute; top: 420px; left: 165px">' +
-			'<input type="text" id="causa1" placeholder="Causa 5" style="position: absolute; top: 590px; left: 270px">' +
-			'<input type="text" id="subacusa51" placeholder="Subcausa 1" style="position: absolute; top: 470px; left: 365px">' +
-			'<input type="text" id="subacusa52" placeholder="Subcausa 2" style="position: absolute; top: 420px; left: 380px">' +
-			'<input type="text" id="causa1" placeholder="Causa 6" style="position: absolute; top: 590px; left: 490px">' +
-			'<input type="text" id="subacusa61" placeholder="Subcausa 1" style="position: absolute; top: 470px; left: 585px">' +
-			'<input type="text" id="subacusa62" placeholder="Subcausa 2" style="position: absolute; top: 420px; left: 600px">' +
+			'<input type="text" class="fishbone causa" id="causa1" placeholder="Causa 1" style="position: absolute; top: calc(105px + 10%) ; left: 31%">' +
+			'<input type="text" class="fishbone" id="subacusa11" placeholder="Subcausa 1" style="position: absolute; top: calc(105px + 18%); left: 36.5%">' +
+			'<input type="text" class="fishbone" id="subacusa12" placeholder="Subcausa 2" style="position: absolute; top: calc(105px + 24%); left: 38%">' +
+			'<input type="text" class="fishbone causa" id="causa2" placeholder="Causa 2" style="position: absolute; top: calc(105px + 10%); left: 47.5%">' +
+			'<input type="text" class="fishbone" id="subacusa21" placeholder="Subcausa 1" style="position: absolute; top: calc(105px + 18%); left: 53%">' +
+			'<input type="text" class="fishbone" id="subacusa22" placeholder="Subcausa 2" style="position: absolute; top: calc(105px + 24%); left: 54.5%">' +
+			'<input type="text" class="fishbone causa" id="causa3" placeholder="Causa 3" style="position: absolute; top: calc(105px + 10%); left: 64.5%">' +
+			'<input type="text" class="fishbone" id="subacusa31" placeholder="Subcausa 1" style="position: absolute; top: calc(105px + 18%); left: 70%">' +
+			'<input type="text" class="fishbone" id="subacusa32" placeholder="Subcausa 2" style="position: absolute; top: calc(105px + 24%); left: 71.5%">' +
+			'<input type="text" class="fishbone causa" id="causa4" placeholder="Causa 4" style="position: absolute; top: calc(105px + 60%); left: 31%">' +
+			'<input type="text" class="fishbone" id="subacusa41" placeholder="Subcausa 1" style="position: absolute; top: calc(105px + 48%); left: 37.5%">' +
+			'<input type="text" class="fishbone" id="subacusa42" placeholder="Subcausa 2" style="position: absolute; top: calc(105px + 43%); left: 38.5%">' +
+			'<input type="text" class="fishbone causa" id="causa5" placeholder="Causa 5" style="position: absolute; top: calc(105px + 60%); left: 47.5%">' +
+			'<input type="text" class="fishbone" id="subacusa51" placeholder="Subcausa 1" style="position: absolute; top: calc(105px + 48%); left: 54%">' +
+			'<input type="text" class="fishbone" id="subacusa52" placeholder="Subcausa 2" style="position: absolute; top: calc(105px + 43%); left: 55%">' +
+			'<input type="text" class="fishbone causa" id="causa6" placeholder="Causa 6" style="position: absolute; top: calc(105px + 60%); left: 64.5%">' +
+			'<input type="text" class="fishbone" id="subacusa61" placeholder="Subcausa 1" style="position: absolute; top: calc(105px + 48%); left: 71%">' +
+			'<input type="text" class="fishbone" id="subacusa62" placeholder="Subcausa 2" style="position: absolute; top: calc(105px + 43%); left: 72.5%">' +
 			'</div>';
 			flagPareto = false;
 		break;
