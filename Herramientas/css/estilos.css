@@ -10,6 +10,12 @@ img
 	width: 100%;
 }
 
+.imgSombrero
+{
+	height: 50px;
+	width: 50px;
+}
+
 body
 {
 	background-image: url("../sources/back2.jpg");
@@ -215,4 +221,12 @@ svg > rect
 #chart_div > *
 {
 	color: white !important;
+}
+
+.inputSombrero
+{
+	height: 50px;
+	width: calc(100% - 10px);
+	border-radius: 10px;
+	padding: 5px;
 }

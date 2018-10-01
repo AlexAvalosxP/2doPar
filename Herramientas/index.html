@@ -21,17 +21,34 @@
 		<button class="btnHerr" onclick="display(3)">6 Sombreros para pensar</button>
 	</div>
 	<div class="midArea" id="midArea">
-		<!--
 		<div class="infoArea">
-			<h1>Diagrama de Ishikawa</h1>
-			<p>Consiste en una representación gráfica que permite visualizar las causas que explican un determinado problema, lo cual la convierte en una herramienta de la Gestión de la Calidad ampliamente utilizada dado que orienta la toma de decisiones al abordar las bases que determinan un desempeño deficiente.</p>
+			<h1>6 Sombreros para pensar</h1>
+			<p>Sombrero blanco: Este sombrero nos enseñará a ver las cosas desde un punto de vista objetivo, neutro y vacío de sesgos.</p>
+			<p>Sombrero negro: Representa lo lógico-negativo y nos enseña a comprender por qué ciertas cosas pueden salir mal, no funcionar o no acontecer de la forma que nosotros pensamos.</p>
+			<p>Sombrero rojo: Es pasional, es emotivo y siente la vida desde el corazón y el universo emocional.</p>
+			<p>Sombrero amarillo: Nos enseña a aplicar un enfoque de pensamiento lógico-positivo.</p>
+			<p>Sombrero verde: Se contiene el pensamiento lateral, ese que nos invita a ser provocativos y no tan conservadores, a usar el movimiento novedoso antes que el juicio restrictivo.</p>
+			<p>Sombrero azul: Representa por tanto el pensamiento estructurado, el que se centra y nos guía en cada paso, señalando alternativas, proponiendo nuevas estrategias .</p>
 		</div>
-		<div class="interactArea">
-			
-		</div> -->
+		<div class="interactArea" id="interactArea">
+			<div class="imgSombrero"><img src=""></div>
+			<label id="sobrero1"></label>
+			<div class="imgSombrero"><img src=""></div>
+			<label id="sobrero2"></label>
+			<div class="imgSombrero"><img src=""></div>
+			<label id="sobrero3"></label>
+			<div class="imgSombrero"><img src=""></div>
+			<label id="sobrero4"></label>
+			<div class="imgSombrero"><img src=""></div>
+			<label id="sobrero5"></label>
+			<div class="imgSombrero"><img src=""></div>
+			<label id="sobrero6"></label>
+		</div>	
+		<!--
 		<div class="squareArea">
 			<h1>Selecciona una opción</h1>
 		</div>
+	-->
 	</div>
 	<div class="bottomArea">
 		<button class="btnBottom" onclick="display(4)">Acerca de</button>
@@ -42,8 +59,20 @@
 		<div class="settingsBox">
 			<h3>Problemas - Prioridad</h3>
 			<div id="cases">
-				<div id="case1"><input type="text" name="caseName"><input type="number" name="caseVal" required><button onclick="addSpace()">+</button></div>
+				<div id="case1"><input type="text" name="caseName"><input type="number" name="caseVal" min="0" max="100"><button onclick="addSpace()">+</button></div>
 			</div>
+			<h3>¿Cuales son las cosas positivas que identificas de tu problema?</h3>
+			<textarea name="inputSombrero" class="inputSombrero"></textarea>
+			<h3>¿Cuales son las cosas positivas que identificas de tu problema?</h3>
+			<textarea name="inputSombrero" class="inputSombrero"></textarea>
+			<h3>¿Cuales son las cosas positivas que identificas de tu problema?</h3>
+			<textarea name="inputSombrero" class="inputSombrero"></textarea>
+			<h3>¿Cuales son las cosas positivas que identificas de tu problema?</h3>
+			<textarea name="inputSombrero" class="inputSombrero"></textarea>
+			<h3>¿Cuales son las cosas positivas que identificas de tu problema?</h3>
+			<textarea name="inputSombrero" class="inputSombrero"></textarea>
+			<h3>¿Cuales son las cosas positivas que identificas de tu problema?</h3>
+			<textarea name="inputSombrero" class="inputSombrero"></textarea>
 		</div>
 		<button class="btnSettings" onclick="applySettings()">Aplicar</button>	
 	</div>
