@@ -11,7 +11,26 @@ function display(opt)
 			'<p>Consiste en una representación gráfica que permite visualizar las causas que explican un determinado problema, lo cual la convierte en una herramienta de la Gestión de la Calidad ampliamente utilizada dado que orienta la toma de decisiones al abordar las bases que determinan un desempeño deficiente.</p>' +
 			'<p>Identifica un problema o efecto y luego enumera un conjunto de causas que potencialmente explican dicho comportamiento. Adicionalmente cada causa se puede desagregar con grado mayor de detalle en subcausas.</p>' +
 			'</div>' +
-			'<div class="interactArea" id="interactArea">' +		
+			'<div class="interactArea" id="interactArea">' +
+			'<img src="sources/fishbone.png" style="">' +
+			'<input type="text" id="causa1" placeholder="Causa 1" style="position: absolute; top:calc(105px + 10%) ; left: 30%">' +
+			'<input type="text" id="subacusa11" placeholder="Subcausa 1" style="position: absolute; top: 180px; left: 150px">' +
+			'<input type="text" id="subacusa12" placeholder="Subcausa 2" style="position: absolute; top: 230px; left: 165px">' +
+			'<input type="text" id="causa1" placeholder="Causa 2" style="position: absolute; top: 90px; left: 270px">' +
+			'<input type="text" id="subacusa21" placeholder="Subcausa 1" style="position: absolute; top: 180px; left: 365px">' +
+			'<input type="text" id="subacusa22" placeholder="Subcausa 2" style="position: absolute; top: 230px; left: 380px">' +
+			'<input type="text" id="causa1" placeholder="Causa 3" style="position: absolute; top: 90px; left: 490px">' +
+			'<input type="text" id="subacusa31" placeholder="Subcausa 1" style="position: absolute; top: 180px; left: 585px">' +
+			'<input type="text" id="subacusa32" placeholder="Subcausa 2" style="position: absolute; top: 230px; left: 600px">' +
+			'<input type="text" id="causa1" placeholder="Causa 4" style="position: absolute; top: 590px; left: 50px">' +
+			'<input type="text" id="subacusa41" placeholder="Subcausa 1" style="position: absolute; top: 470px; left: 150px">' +
+			'<input type="text" id="subacusa42" placeholder="Subcausa 2" style="position: absolute; top: 420px; left: 165px">' +
+			'<input type="text" id="causa1" placeholder="Causa 5" style="position: absolute; top: 590px; left: 270px">' +
+			'<input type="text" id="subacusa51" placeholder="Subcausa 1" style="position: absolute; top: 470px; left: 365px">' +
+			'<input type="text" id="subacusa52" placeholder="Subcausa 2" style="position: absolute; top: 420px; left: 380px">' +
+			'<input type="text" id="causa1" placeholder="Causa 6" style="position: absolute; top: 590px; left: 490px">' +
+			'<input type="text" id="subacusa61" placeholder="Subcausa 1" style="position: absolute; top: 470px; left: 585px">' +
+			'<input type="text" id="subacusa62" placeholder="Subcausa 2" style="position: absolute; top: 420px; left: 600px">' +
 			'</div>';
 			flagPareto = false;
 		break;

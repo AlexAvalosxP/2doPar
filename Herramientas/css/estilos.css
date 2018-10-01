@@ -4,6 +4,12 @@
 	padding: 0px;
 }
 
+img
+{
+	height: 100%;
+	width: 100%;
+}
+
 body
 {
 	background-image: url("../sources/back2.jpg");
