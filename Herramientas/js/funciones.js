@@ -195,3 +195,15 @@ function getValues()
 	return valueArray;
 }
 }
+
+function setSombreros()
+{
+	sombrero = document.getElementsByName("inputSombrero");
+	document.getElementById("sobrero1").innerHTML = sombrero[0].value;
+	document.getElementById("sobrero2").innerHTML = sombrero[1].value;
+	document.getElementById("sobrero3").innerHTML = sombrero[2].value;
+	document.getElementById("sobrero4").innerHTML = sombrero[3].value;
+	document.getElementById("sobrero5").innerHTML = sombrero[4].value;
+	document.getElementById("sobrero6").innerHTML = sombrero[5].value;
+
+}
