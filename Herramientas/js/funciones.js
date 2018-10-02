@@ -1,4 +1,5 @@
 flagPareto = false;
+valYaxis = 0;
 
 function display(opt)
 {
@@ -72,13 +73,31 @@ function applySettings()
 	setArea.hidden = true;
 	casesName = document.getElementsByName("caseName");
 	casesValue = document.getElementsByName("caseVal");
-	drawVisualization();
-	/*
-	for (i = 0; i < casesName.length; i++) {
-		console.log(casesName[i].value);
-		console.log(casesValue[i].value);
+
+	newCasesValue = [];
+	newCasesName = [];
+	casesValueArray = [];
+	
+	for (i = 0; i < casesValue.length; i++) {
+		casesValueArray.push(parseInt(casesValue[i].value));
 	}
-	*/
+
+	newCasesValue = casesValueArray.sort(function(a, b){return b - a});
+
+	casesValueArray = [];
+	
+	for (i = 0; i < casesValue.length; i++) {
+		casesValueArray.push(parseInt(casesValue[i].value));
+	}
+
+	for (i = 0; i < casesValue.length; i++) {
+		newCasesName.push(casesName[casesValueArray.indexOf(newCasesValue[i])].value);	
+	}
+
+	if (flagPareto) 
+	{
+		display(2);
+	}
 }
 
 function changeSettings()
@@ -159,7 +178,8 @@ function drawVisualization() {
         },
         titleTextStyle: {
             color: 'white'
-        }
+        },
+        viewWindow: {max: 1}
     },
     legend: {
         textStyle: {
@@ -170,6 +190,10 @@ function drawVisualization() {
 
     var chart = new google.visualization.ComboChart(document.getElementById('chart_div'));
     chart.draw(data, options);
+
+    midArea.innerHTML += '<div class="lineX" style="position: fixed; margin-top: 11%; left: 37%; height: 2px; width: calc(' + (valYaxis * ((parseInt(document.getElementById('interactArea').offsetWidth))*0.64)/newCasesValue.length) + 'px); background: yellow;"></div>' +
+			'<div class="lineY" style="position: fixed; margin-top: 11%; left: calc(37% + ' + (valYaxis * ((parseInt(document.getElementById('interactArea').offsetWidth))*0.64)/newCasesValue.length) + 'px); height: 36%; width: 2px; background: yellow;"></div>';
+
 }
 
 function getValues()
@@ -181,14 +205,22 @@ function getValues()
 	total = 0;
 
 	for (i = 0; i < casesName.length; i++) {
-		total += parseInt(casesValue[i].value);
+		total += newCasesValue[i];
 	}
+
+	//flagAxis = true
+
+	valYaxis = 0;
 
 	sum = 0;
 	for (i = 0; i < casesName.length; i++) {
-		act = parseInt(casesValue[i].value)/total
+		act = newCasesValue[i]/total
 		sum += act;
-		valueArray.push([String(casesName[i].value), act, sum]);
+		valueArray.push([String(newCasesName[i]), act, sum]);
+		if (sum < 0.8) {
+			valYaxis++;
+			//flagAxis = false;
+		}
 	}
 
 	console.log(valueArray);
