@@ -60,6 +60,13 @@ function display(opt)
 			'</div>';
 			flagPareto = false;
 		break;
+		case 4:
+			midArea.innerHTML = '<div class="squareArea">' +
+				'<div class="profileDiv"><div class="imgProfile"><img src="sources/p1.jpg"></div><h2>Alejandro Ávalos</h2><h3>alexavalosxp@gmial.com</h3></div>' +
+				'<div class="profileDiv"><div class="imgProfile"><img src="sources/p2.jpg"></div><h2>Humberto Ávila</h2><h3>humberto.avila07@gmail.com</h3></div>' +
+				'<div class="profileDiv"><div class="imgProfile"><img src="sources/p3.jpg"></div><h2>Jorge Maya</h2><h3>jorgemaya08@hotmail.com</h3></div>' +
+				'</div>';
+		break;
 		default:
 			midArea.innerHTML = 'ERROR';
 			flagPareto = false;
