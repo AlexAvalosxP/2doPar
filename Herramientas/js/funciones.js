@@ -248,18 +248,18 @@ function setSombreros()
 	sombrero = document.getElementsByName("inputSombrero");
 	if(flagSombreros){
 		midArea.innerHTML +='<div class="interactArea" id="interactArea">'
-		+'<div class="imgSombrero" style="margin-left:5%;"><img src="img/hat.svg" style="width: 10%; height: 200px;"></div>'
-		+'<label id="sombrero1" >'+sombrero[0].value+'</label>'
-		+'<div class="imgSombrero" style="margin-left:5%;"><img src="img/hat.1.svg" style="width: 10%; height: 200px; filter: saturate(100%)"></div>'
-		+'<label id="sombrero2">'+sombrero[1].value+'</label>'
-		+'<div class="imgSombrero" style="margin-left:5%;"><img src="img/hat.2.svg" style="width: 10%; height: 200px;"></div>'
-		+'<label id="sombrero3">'+sombrero[2].value+'</label>'
-		+'<div class="imgSombrero" style="margin-left:5%;"><img src="img/hat.3.svg" style="width: 10%; height: 200px;"></div>'
-		+'<label id="sombrero4">'+sombrero[3].value+'</label>'
-		+'<div class="imgSombrero" style="margin-left:5%;"><img src="img/hat.4.svg" style="width: 10%; height: 200px;"></div>'
-		+'<label id="sombrero5">'+sombrero[4].value+'</label>'
-		+'<div class="imgSombrero" style="margin-left:5%;"><img src="img/hat.5.svg" style="width: 10%; height: 200px;"></div>'
-		+'<label id="sombrero6">'+sombrero[5].value+'</label>'
+		+'<div class="sombreroArea"><div class="imgSombrero" style="margin-left:5%;"><img src="img/hat.svg" style="width: 10%; height: 200px;"></div>'
+		+'<label id="sombrero1" >'+sombrero[0].value+'</label></div>'
+		+'<div class="sombreroArea"><div class="imgSombrero" style="margin-left:5%;"><img src="img/hat.1.svg" style="width: 10%; height: 200px; filter: saturate(100%)"></div>'
+		+'<label id="sombrero2">'+sombrero[1].value+'</label></div>'
+		+'<div class="sombreroArea"><div class="imgSombrero" style="margin-left:5%;"><img src="img/hat.2.svg" style="width: 10%; height: 200px;"></div>'
+		+'<label id="sombrero3">'+sombrero[2].value+'</label></div>'
+		+'<div class="sombreroArea"><div class="imgSombrero" style="margin-left:5%;"><img src="img/hat.3.svg" style="width: 10%; height: 200px;"></div>'
+		+'<label id="sombrero4">'+sombrero[3].value+'</label></div>'
+		+'<div class="sombreroArea"><div class="imgSombrero" style="margin-left:5%;"><img src="img/hat.4.svg" style="width: 10%; height: 200px;"></div>'
+		+'<label id="sombrero5">'+sombrero[4].value+'</label></div>'
+		+'<div class="sombreroArea"><div class="imgSombrero" style="margin-left:5%;"><img src="img/hat.5.svg" style="width: 10%; height: 200px;"></div>'
+		+'<label id="sombrero6">'+sombrero[5].value+'</label></div>'
 		+'</div>';
 	}
 

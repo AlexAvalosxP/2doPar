@@ -112,7 +112,6 @@ body
 	float: left;
 	color: white;
 	border-radius: 0px 30px 30px 0px;
-	overflow-y: scroll;
 }
 
 .squareArea
@@ -256,4 +255,20 @@ svg > rect
 
 .causa{
 	color: black !important;
+}
+
+.inputSombrero
+{
+	height: 55px;
+	width: 100%;
+	border-radius: 15px;
+}
+
+.sombreroArea
+{
+	height: calc(50% - 14px);
+	width: calc(33% - 14px);
+	padding: 7px;
+	float: left;
+	border-radius: 10px;
 }
