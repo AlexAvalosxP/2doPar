@@ -34,6 +34,7 @@ function display(opt)
 			'<input type="text" class="fishbone" id="subacusa62" placeholder="Subcausa 2" style="position: absolute; top: calc(105px + 43%); left: 72.5%">' +
 			'</div>';
 			flagPareto = false;
+			flagSombreros = false;
 		break;
 		case 2:
 			midArea.innerHTML = '<div class="infoArea">' +
@@ -43,6 +44,7 @@ function display(opt)
 			'</div>' +
 			'<div class="interactArea" id="interactArea"><div id="chart_div" style="width: 900px; height: 500px;"></div>' +		
 			'</div>';
+			flagSombreros = false;
 			flagPareto = true;
 			drawVisualization();
 		break;
@@ -55,10 +57,10 @@ function display(opt)
 			'<p>Sombrero amarillo: Nos enseña a aplicar un enfoque de pensamiento lógico-positivo.</p>' +
 			'<p>Sombrero verde: Se contiene el pensamiento lateral, ese que nos invita a ser provocativos y no tan conservadores, a usar el movimiento novedoso antes que el juicio restrictivo.</p>' +
 			'<p>Sombrero azul: Representa por tanto el pensamiento estructurado, el que se centra y nos guía en cada paso, señalando alternativas, proponiendo nuevas estrategias .</p>' +
-			'</div>' +
-			'<div class="interactArea" id="interactArea">' +		
 			'</div>';
 			flagPareto = false;
+			flagSombreros = true;
+			setSombreros();
 		break;
 		case 4:
 			midArea.innerHTML = '<div class="squareArea">' +
@@ -70,6 +72,7 @@ function display(opt)
 		default:
 			midArea.innerHTML = 'ERROR';
 			flagPareto = false;
+			flagSombreros = false;
 		break;
 	}
 }
@@ -104,6 +107,11 @@ function applySettings()
 	if (flagPareto) 
 	{
 		display(2);
+	}
+
+	if (flagSombreros) 
+	{
+		display(3);
 	}
 }
 
@@ -238,11 +246,21 @@ function getValues()
 function setSombreros()
 {
 	sombrero = document.getElementsByName("inputSombrero");
-	document.getElementById("sobrero1").innerHTML = sombrero[0].value;
-	document.getElementById("sobrero2").innerHTML = sombrero[1].value;
-	document.getElementById("sobrero3").innerHTML = sombrero[2].value;
-	document.getElementById("sobrero4").innerHTML = sombrero[3].value;
-	document.getElementById("sobrero5").innerHTML = sombrero[4].value;
-	document.getElementById("sobrero6").innerHTML = sombrero[5].value;
+	if(flagSombreros){
+		midArea.innerHTML +='<div class="interactArea" id="interactArea">'
+		+'<div class="imgSombrero" style="margin-left:5%;"><img src="img/hat.svg" style="width: 10%; height: 200px;"></div>'
+		+'<label id="sombrero1" >'+sombrero[0].value+'</label>'
+		+'<div class="imgSombrero" style="margin-left:5%;"><img src="img/hat.1.svg" style="width: 10%; height: 200px; filter: saturate(100%)"></div>'
+		+'<label id="sombrero2">'+sombrero[1].value+'</label>'
+		+'<div class="imgSombrero" style="margin-left:5%;"><img src="img/hat.2.svg" style="width: 10%; height: 200px;"></div>'
+		+'<label id="sombrero3">'+sombrero[2].value+'</label>'
+		+'<div class="imgSombrero" style="margin-left:5%;"><img src="img/hat.3.svg" style="width: 10%; height: 200px;"></div>'
+		+'<label id="sombrero4">'+sombrero[3].value+'</label>'
+		+'<div class="imgSombrero" style="margin-left:5%;"><img src="img/hat.4.svg" style="width: 10%; height: 200px;"></div>'
+		+'<label id="sombrero5">'+sombrero[4].value+'</label>'
+		+'<div class="imgSombrero" style="margin-left:5%;"><img src="img/hat.5.svg" style="width: 10%; height: 200px;"></div>'
+		+'<label id="sombrero6">'+sombrero[5].value+'</label>'
+		+'</div>';
+	}
 
 }

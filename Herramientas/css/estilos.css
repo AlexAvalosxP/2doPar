@@ -112,6 +112,7 @@ body
 	float: left;
 	color: white;
 	border-radius: 0px 30px 30px 0px;
+	overflow-y: scroll;
 }
 
 .squareArea
