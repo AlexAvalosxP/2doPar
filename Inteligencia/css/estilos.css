@@ -286,3 +286,182 @@ svg > rect
 	width: calc(50% - 10px);
 	padding: 5px
 }
+
+.question
+{
+	height: 80px;
+	width: 100%;
+	color: white;
+	font-size: 1.7em;
+	line-height: 80px;
+}
+
+.options
+{
+	height: calc(100% - 120px);
+	width: calc(100% - 40px);
+	padding: 20px;
+}
+
+.opt
+{
+	float: left;
+	height: calc(100% - 50px);
+	margin-top: 10px;
+	width: calc(50% - 90px);
+	margin-left: 40px;
+	border-radius: 20px;
+	padding: 15px;
+	background: rgba(0,0,0,0.5);
+}
+
+.opt:hover
+{
+	background: white;
+}
+
+.instructions
+{
+	height: 80px;
+	width: 100%;
+	color: white;
+	font-size: 0.8em;
+}
+
+.btnBriggs
+{
+	float: left;
+	height: calc((100% / 4) - 10px);
+	width: calc((100% / 2) - 10px);
+	border-radius: 10px;
+	margin: 5px;
+	line-height: 380%;
+	text-align: center;	
+	font-size: 1.7em;
+}
+
+.divBriggs
+{
+	padding: 40px !important;
+	height: calc(100% - 80px) !important;
+	width: calc(50% - 80px) !important;
+	background: rgba(0,0,0,0.8) !important;
+}
+
+.divBriggs > h1
+{
+	margin-bottom: 10px;
+	text-align: center;
+}
+
+.divBriggs > h2
+{
+	margin-bottom: 20px;
+}
+
+.divBriggs > p
+{
+	text-align: justify;
+}
+
+.divBriggs > button
+{
+	height: 50px;
+	width: 350px;
+	background: rgba(0,0,0,0.4);
+	border-radius: 25px;
+	color: white;
+	position: absolute;
+	bottom: 85px;
+	left: calc(50vw - 175px);
+}
+
+.divBriggs > button:hover
+{
+	background: black;
+}
+
+.gameArea
+{
+	height: 100%;
+	width: 100%;
+	text-align: center;
+}
+
+.gameArea>h1
+{
+	line-height: 100vh;
+}
+
+.question2
+{
+	height: 90px;
+	width: 100%;
+	color: white;
+	font-size: 1.4em;
+	text-align: center;
+}
+
+.options2
+{
+	height: calc(100% - 200px);
+	width: calc(100%);
+}
+
+.opt2
+{
+	float: left;
+	height: calc(100% - 50px);
+	margin-top: 10px;
+	width: calc(50% - 40px);
+	margin: 5px;
+	border-radius: 20px;
+	padding: 15px;
+	background: rgba(0,0,0,0.5);
+}
+
+.opt2:hover
+{
+	background: white;
+}
+
+.instructions
+{
+	height: 80px;
+	width: 100%;
+	color: white;
+	font-size: 0.8em;
+}
+
+.btnShowTest
+{
+	height: 50px;
+	width: 350px;
+	background: rgba(0,0,0,0.4);
+	border-radius: 25px;
+	color: white;
+	margin-top: calc(50% - 200px);
+	left: calc(50vw - 175px);	
+}
+
+.btnShowTest:hover
+{
+	background: black;
+}
+
+.closeBriggs
+{
+	height: 50px !important;
+	width: 50px !important;
+	position: absolute !important;
+	top: calc(105px + 5%) !important;
+	left: 69% !important;
+	border-radius: 15px !important;
+	background: rgba(0,0,0,0.8) !important;
+	
+}
+
+.closeBriggs:hover
+{
+	background: red !important;
+}
